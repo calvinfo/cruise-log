@@ -1,0 +1,19 @@
+{
+  "name": "cruise-log",
+  "version": "0.0.1",
+  "description": "A raft log implementation",
+  "keywords": [],
+  "author": "Calvin French-Owen <calvin@calv.info>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/calvinfo/cruise-log.git"
+  },
+  "dependencies": {
+    "debug": "~0.7.2",
+    "range": "0.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "main": "lib/index"
+}
