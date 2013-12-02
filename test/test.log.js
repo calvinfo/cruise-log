@@ -22,19 +22,14 @@ describe('Log', function () {
   });
 
   describe('#commit()', function () {
-    it('should commit through the specified index', function (done) {
+    it('should commit through the specified index', function () {
       var log = new Log();
-      log.once('data', function (entries) {
-        assert(entries.length === 2);
-        assert(log.size() === 1);
-        done();
-      });
-
       log.append({ term: 1, index: 1 });
       log.append({ term: 2, index: 2 });
       log.append({ term: 3, index: 3 });
 
       log.commit(2);
+      assert(log.size() === 1);
     });
   });
 
